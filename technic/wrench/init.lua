@@ -160,3 +160,11 @@ minetest.register_tool("wrench:wrench", {
 		return itemstack
 	end,
 })
+minetest.register_craft({
+	output = "wrench:wrench", 
+	recipe = {
+		{"technic:wrought_iron_ingot", "", "technic:wrought_iron_ingot"},
+		{"technic:wrought_iron_ingot", "technic:wrought_iron_ingot", "technic:wrought_iron_ingot"},
+		{"","technic:wrought_iron_ingot",""}
+	}
+})
