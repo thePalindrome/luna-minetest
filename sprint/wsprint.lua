@@ -133,3 +133,11 @@ function setState(playerName, state) --Sets the state of a player (0=stopped, 1=
 	end
 	return false
 end
+
+minetest.register_on_cheat(function(player,cheat)
+	local name = player:get_player_name();
+	if cheat.type == "moved_too_fast" and players[name][state] == 3 then
+		return false;
+	end
+	return true;
+end)
