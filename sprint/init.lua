@@ -8,7 +8,7 @@ distributed without any warranty.
 ]]
 
 --Configuration variables, these are all explained in README.md
-SPRINT_METHOD = 0
+SPRINT_METHOD = 1
 SPRINT_SPEED = 1.8
 SPRINT_JUMP = 1.1
 SPRINT_STAMINA = 20
